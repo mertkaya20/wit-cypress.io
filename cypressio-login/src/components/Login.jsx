@@ -204,7 +204,9 @@ export default function Login() {
               style={styles.input(touched.email && errors.email)}
             />
             {touched.email && errors.email && (
-              <p style={styles.errorMsg}>Please enter a valid email address</p>
+              <p data-id="email-p" style={styles.errorMsg}>
+                Please enter a valid email address
+              </p>
             )}
           </div>
 
@@ -224,7 +226,7 @@ export default function Login() {
               style={styles.input(touched.password && errors.password)}
             />
             {touched.password && errors.password && (
-              <p style={styles.errorMsg}>
+              <p data-id="password-p" style={styles.errorMsg}>
                 Password must be 6-12 characters, include at least one uppercase
                 letter, one lowercase letter, one number, and one special
                 character. No spaces allowed, max 2 repetitive characters.
@@ -254,6 +256,7 @@ export default function Login() {
           </div>
 
           <button
+            type="submit"
             onClick={handleSubmit}
             disabled={!isValid}
             style={styles.button(!isValid)}
