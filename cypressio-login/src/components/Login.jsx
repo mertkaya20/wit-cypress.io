@@ -118,6 +118,29 @@ const styles = {
     color: "#999",
     margin: 0,
   },
+  demoBox: {
+    marginTop: "1.5rem",
+    padding: "1rem",
+    borderRadius: "10px",
+    background: "#f6f8fa",
+    border: "0.5px solid #e5e5e5",
+  },
+  demoTitle: {
+    fontSize: "13px",
+    fontWeight: 600,
+    marginBottom: "0.5rem",
+    color: "#333",
+  },
+  demoItem: {
+    fontSize: "13px",
+    color: "#555",
+    margin: "2px 0",
+    fontFamily: "monospace",
+  },
+  demoLabel: {
+    color: "#999",
+    marginRight: "6px",
+  },
 };
 
 export default function Login() {
@@ -263,6 +286,20 @@ export default function Login() {
           >
             Login
           </button>
+
+          <div style={styles.demoBox}>
+            <div style={styles.demoTitle}>Demo Account</div>
+
+            <div style={styles.demoItem}>
+              <span style={styles.demoLabel}>Email:</span>
+              Cristal.Greenfelder20@gmail.com
+            </div>
+
+            <div style={styles.demoItem}>
+              <span style={styles.demoLabel}>Password:</span>
+              Y3sYRjuuDmJgooq
+            </div>
+          </div>
 
           <div style={styles.divider} />
           <p style={styles.bottomNote}>
